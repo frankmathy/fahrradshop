@@ -45,4 +45,10 @@ class Dreirad extends Fahrrad {
   }
 }
 
-const raeder = [new Fahrrad("BMX", 500), new Dreirad("Mattel", 50)];
+$(document).ready(function () {
+  $("#ajaxButton").click(function () {
+    alert("Button was clicked!");
+    const raeder = [new Fahrrad("BMX", 500), new Dreirad("Mattel", 50)];
+    console.log(raeder, raeder);
+  });
+});
